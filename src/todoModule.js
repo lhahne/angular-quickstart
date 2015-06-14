@@ -1,7 +1,5 @@
 'use strict'
 
-require('./todo.css')
-
 angular
   .module('todo', [])
   .directive('todos', () => ({
@@ -9,6 +7,16 @@ angular
     scope: {},
     template: require('./todos.html'),
     controller: ['$scope', ($scope) => {
+
+      $scope.styles = {
+        list: {
+          'list-style-type': 'none'
+        },
+        done: {
+          'text-decoration': 'line-through',
+          'color': 'grey'
+        }
+      }
 
       $scope.todos = [{name: 'Pese pyykit', completed: false}, {name: 'Vie roskat', completed: true}]
 

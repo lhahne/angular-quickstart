@@ -1,7 +1,7 @@
-<ul class="todo-list">
+<ul class="todo-list" ng-style="styles.list">
   <li ng-repeat="todo in todos">
     <input type="checkbox" ng-model="todo.completed"></input>
-    <span class="done-{{todo.completed}}">{{todo.name}}</span>
+    <span ng-style="todo.completed ? styles.done : {}">{{todo.name}}</span>
   </li>
 </ul>
 

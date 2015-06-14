@@ -2,4 +2,4 @@
 
 angular = require('angular')
 
-angular.module('quickstart', [])
+angular.module('quickstart', [require('./todoModule')])

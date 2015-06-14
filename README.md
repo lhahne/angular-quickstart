@@ -4,10 +4,12 @@
 ```
 npm init
 npm install --save angular
-npm install -g --save browserify watchify
+npm install --save browserify watchify
 ```
 
 ## Running
 ```
 npm install
+npm start
+(open index.html in browser)
 ```

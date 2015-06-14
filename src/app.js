@@ -1,1 +1,3 @@
-console.log('it works')
+'use strict'
+
+angular = require('angular')

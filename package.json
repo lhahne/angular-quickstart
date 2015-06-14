@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "watchify src/app.js -o public/app.js",
+    "start": "watchify src/app.js -v -o public/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

@@ -13,3 +13,8 @@ npm install
 npm start
 (open index.html in browser)
 ```
+
+## Running just the build
+```
+npm run build
+```

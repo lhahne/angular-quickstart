@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/lhahne/angular-quickstart/issues"
   },
-  "homepage": "https://github.com/lhahne/angular-quickstart#readme"
+  "homepage": "https://github.com/lhahne/angular-quickstart#readme",
+  "dependencies": {
+    "angular": "^1.3.16",
+    "browserify": "^10.2.4",
+    "watchify": "^3.2.2"
+  }
 }

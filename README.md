@@ -4,7 +4,7 @@
 ```
 npm init
 npm install --save angular
-npm install --save browserify watchify
+npm install --save browserify watchify uglifyify
 ```
 
 ## Running

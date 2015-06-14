@@ -33,5 +33,8 @@
       "babelify",
       "browserify-css"
     ]
+  },
+  "browserify-css": {
+    "minify": true
   }
 }

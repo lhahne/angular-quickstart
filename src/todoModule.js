@@ -1,5 +1,7 @@
 'use strict'
 
+require('./todo.css')
+
 angular
   .module('todo', [])
   .directive('todos', () => ({
@@ -10,6 +12,9 @@ angular
 
       $scope.todos = [{name: 'Pese pyykit', completed: false}, {name: 'Vie roskat', completed: true}]
 
+      $scope.createTodo = (name) => {
+        $scope.todos.push({name, completed: false})
+      }
     }]
   }))
 

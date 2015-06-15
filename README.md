@@ -5,6 +5,7 @@
 npm init
 npm install --save angular
 npm install --save browserify watchify uglifyify
+(edit scripts in package.json)
 ```
 
 ## Running

@@ -1,0 +1,16 @@
+<div>
+  <form ng-submit="sendMessage(author, newMessage)">
+    Name: <input type="text" ng-model="author">
+    Message: <input type="text" ng-model="newMessage">
+    <input type="submit">
+  </form>
+</div>
+
+<ul ng-repeat="message in messages">
+  <li>{{message.author}} {{message.created | date : 'short'}}: {{message.content}}
+    <span ng-click="toggleEditable(message._id, $index)" ng-style="{color: 'red'}">toggle edit</span></li>
+  <form ng-submit="updateMessage(message._id, editing[message._id], message.author)" ng-if="editable[message._id]">
+    <input type="text" ng-model="editing[message._id]"></input>
+    <input type="submit"></input>
+  </form>
+</ul>

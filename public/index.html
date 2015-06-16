@@ -7,9 +7,20 @@
 </head>
 
 <body ng-app="quickstart">
-  <p>
-    {{ 1 + 2 }}
-  </p>
+
+  <div ng-controller="TodoListController">
+    <ul ng-repeat="item in items">
+      <li>
+        <input type="checkbox" ng-model="item.finished"></input>
+        <span ng-style="item.finished ? {'text-decoration': 'line-through'} : {}">{{ item.name }}</span>
+        <button ng-click="removeItem($index)">poista</button>
+      </li>
+    </ul>
+    <form ng-submit="addItem(newItem)">
+      <input type="text" ng-model="newItem"></input>
+      <input type="submit"></input>
+    </form>
+  </div>
 
   <script src="app.js"></script>
 </body>
